@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+celery
+redis
+pandas
+fyers-apiv3
+python-dotenv

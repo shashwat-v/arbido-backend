@@ -1,0 +1,63 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.pkl
+
+# --- Environment / Credentials ---
+.env
+access_token.json
+*.sqlite3
+*.db
+
+# --- Data and Logs ---
+data/
+logs/
+!logs/.gitkeep  # (optional) keep the folder if you want it empty in repo
+
+# --- Jupyter / Notebooks ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+
+# --- Virtual Environments ---
+venv/
+env/
+.ptb-fastapi/
+*.venv/
+*.env/
+ENV/
+
+# --- IDE Files ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- Docker / Build ---
+*.log
+*.pid
+*.gz
+*.bak
+*.tar
+*.zip
+__pycache__/
+*.egg-info
+build/
+dist/
+*.egg
+.cache/
+.pytest_cache/
+
+# --- Redis / Celery Cache ---
+celerybeat-schedule
+celerybeat.pid
+
+# --- Misc ---
+*.tmp
