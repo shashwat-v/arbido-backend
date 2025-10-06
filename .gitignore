@@ -79,8 +79,8 @@ dist/
 .eggs/
 
 # Temporary / debug files
-tmp/
 temp/
+tmp/
 *.tmp
 *.bak
 *.log.*
