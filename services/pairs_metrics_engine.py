@@ -6,15 +6,15 @@ import json
 import os
 
 
-def compute_pairs_metrics(ticker_1: str, ticker_2: str, window: int = 30):
+def compute_pairs_metrics(ticker_1: str, ticker_2: str, file_1: str, file_2: str, window: int = 30):
     """
     Compute correlation, cointegration, hedge ratio, rolling spread,
     rolling z-score, and save JSON output for frontend.
     """
 
     # --- Load fetched data ---
-    df1 = pd.read_csv(f"data/{ticker_1}_data.csv")
-    df2 = pd.read_csv(f"data/{ticker_2}_data.csv")
+    df1 = pd.read_csv(file_1)
+    df2 = pd.read_csv(file_2)
 
     df = pd.merge(
         df1[["timestamp", "close"]],

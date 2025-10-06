@@ -5,3 +5,4 @@ redis
 pandas
 fyers-apiv3
 python-dotenv
+statsmodels

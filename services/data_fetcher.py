@@ -1,5 +1,5 @@
 from fyers_apiv3 import fyersModel
-from fyers_client import fyers
+# from fyers_client import fyers
 from fyers_apiv3 import fyersModel
 from dotenv import load_dotenv
 import pandas as pd
@@ -30,8 +30,10 @@ end_date = sys.argv[3]
 # ticker = sys.argv[1] if len(sys.argv) > 1 else "NSE:NIFTY50-INDEX"
 print(ticker)
 timeframe = "30"
-start_date = "2024-10-20"
-end_date = "2024-12-20"
+print(start_date)
+print(end_date)
+# start_date = "2024-10-20"
+# end_date = "2024-12-20"
 
 data = {
     "symbol": ticker,
