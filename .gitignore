@@ -1,65 +1,102 @@
-# --- Python ---
+# ==========================
+# ⚙️ Python + Celery Backend
+# ==========================
+
+# Byte-compiled / cache files
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
+*$py.class
+
+# C extensions
 *.so
-*.egg
-*.egg-info/
-*.pkl
 
-# --- Environment / Credentials ---
-.env
-access_token.json
-*.sqlite3
-*.db
-
-# --- Data and Logs ---
-data/
+# Logs and runtime files
 logs/
-!logs/.gitkeep  # (optional) keep the folder if you want it empty in repo
+*.log
+*.out
+*.err
 
-# --- Jupyter / Notebooks ---
-.ipynb_checkpoints/
-*.ipynb
+# Environment variables
+.env
+*.env
 
-# --- OS Files ---
+# Data files
+data/
+*.csv
+*.json
+!requirements.txt  # Keep your dependency list visible
+
+# Access tokens / secrets
+access_token.json
+token.json
+credentials.json
+
+# OS & IDE files
 .DS_Store
 Thumbs.db
-
-# --- Virtual Environments ---
-venv/
-env/
-.ptb-fastapi/
-*.venv/
-*.env/
-ENV/
-
-# --- IDE Files ---
 .vscode/
 .idea/
-*.code-workspace
+*.swp
+*.swo
 
-# --- Docker / Build ---
-*.log
+# Virtual environment folders
+venv/
+.env/
+env/
+.venv/
+
+# Docker
+# Ignore build artifacts and local volumes
 *.pid
-*.gz
+*.seed
 *.bak
-*.tar
-*.zip
-__pycache__/
-*.egg-info
-build/
-dist/
-*.egg
-.cache/
-.pytest_cache/
+*.backup
+*.old
+docker-compose.override.yml
+Dockerfile~ 
 
-# --- Redis / Celery Cache ---
+# Celery specific
 celerybeat-schedule
 celerybeat.pid
 
-# --- Misc ---
-*.tmp
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*,cover
+.hypothesis/
+.pytest_cache/
+.cache/
+nosetests.xml
+junit.xml
 
-access_token.json
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Temporary / debug files
+tmp/
+temp/
+*.tmp
+*.bak
+*.log.*
+
+# Bytecode + compiled python objects
+**/__pycache__/
+*.pyc
+
+# Migrations or generated DB files
+*.sqlite3
+*.db
+
+# Jupyter / notebooks (if used)
+.ipynb_checkpoints/
+
+# Local environment configs
+.envrc
+*.local
+*.secret

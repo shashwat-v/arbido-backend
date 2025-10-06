@@ -4,8 +4,17 @@ from celery.result import AsyncResult
 from services.tasks import fetch_data_task, compute_pairs_metrics_task
 from celery import chord
 import os, json
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # or specify your frontend URL: ["http://localhost:3000"]
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def read_root():
