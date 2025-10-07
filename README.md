@@ -245,7 +245,7 @@ This project is licensed under the **MIT License**.
 **Shashwat Vishwakarma**  
 Aspiring Quant Trader | Developer | Finance Enthusiast  
 📧 [shashwatv.dev@gmail.com](mailto:shashwatv.dev@gmail.com)  
-🌐 [LinkedIn](https://linkedin.com/in/shashwat-vishwakarma)
+🌐 [LinkedIn](https://linkedin.com/in/shashwat-v)
 
 ---
 
